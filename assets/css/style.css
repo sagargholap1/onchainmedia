@@ -1,0 +1,215 @@
+:root {
+    --dark-theme: #222222;
+    --dark-theme-color: #ffffff;
+    --primary: #dd3030;
+    --dark-theme-gray: #2d2d2d;
+}
+/* @import url("https://fonts.cdnfonts.com/css/trebuchet-ms-2"); */
+
+/* @font-face {
+    font-family: "Poppins";
+    src: url("https://fonts.cdnfonts.com/s/12558/trebuc.woff") format("woff");
+} */
+
+@font-face {
+    font-family: "Trebuchet MS";
+    src: url("../fonts/TrebuchetMS/TrebuchetMS.eot");
+    src: url("../fonts/TrebuchetMS/TrebuchetMSd41d.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/TrebuchetMS/TrebuchetMS.woff2") format("woff2"),
+        url("../fonts/TrebuchetMS/TrebuchetMS.woff") format("woff"),
+        url("../fonts/TrebuchetMS/TrebuchetMS.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/NeuePower/NeuePowerTrial-Heavy.ttf")
+        format("truetype");
+}
+
+@font-face {
+    font-family: "PowerGrotesk";
+    src: url("../fonts/PowerGrotesk/PowerGrotesk-Regular.ttf")
+        format("truetype");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf")
+        format("truetype");
+}
+/* @font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf")
+        format("truetype");
+} */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    color: var(--dark-theme-color);
+}
+
+body {
+    background-color: var(--dark-theme);
+}
+
+.font-Poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-PowerGrotesk {
+    font-family: "PowerGrotesk", sans-serif;
+}
+
+.font-Article {
+    font-family: "Poppins", sans-serif;
+}
+
+.bg-red {
+    background-color: var(--primary);
+}
+
+.bg-dark-gray {
+    background-color: var(--dark-theme-gray);
+}
+
+.text-red {
+    color: var(--primary);
+}
+
+.text-grey {
+    color: var(--dark-theme);
+}
+
+.nav-links a {
+    font-family: "Poppins", sans-serif;
+    color: #c6c6c6;
+    transition: 0.4s ease;
+}
+
+.auth-nav-links {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.active {
+    color: white !important;
+}
+
+.hero-tabs::-webkit-scrollbar {
+    width: 3.5px;
+}
+
+.hero-tabs::-webkit-scrollbar-track {
+    background: grey;
+}
+
+.hero-tabs::-webkit-scrollbar-thumb {
+    background: var(--dark-theme-color);
+}
+
+.btn-default {
+    background-color: var(--primary);
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    filter: drop-shadow(0px 3.5px 2px #000000);
+}
+
+.btn-article {
+    background-color: var(--primary);
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    text-align: center;
+}
+
+img {
+    object-fit: cover;
+}
+
+@media (min-width: 600px) {
+    .btn-article {
+        padding: 8px 20px;
+    }
+}
+
+.top-rated-links a {
+    padding: 4px 16px;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    margin: 0px 18px;
+}
+
+.top-rated-links .active {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+}
+
+#scroll-container {
+    /* border: 3px solid black; */
+    font-family: "Poppins", sans-serif;
+    /* border-radius: 5px; */
+    background-color: #f9bf1f;
+    overflow: hidden;
+}
+
+#scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    -moz-animation: my-animation 55s linear infinite;
+    -webkit-animation: my-animation 55s linear infinite;
+    animation: my-animation 55s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+    }
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
